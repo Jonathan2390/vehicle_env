@@ -33,7 +33,7 @@ if build_scatter:  # si la casilla de verificación está seleccionada
 
     # crear un gráfico de dispersión
     fig_b = px.scatter(car_data, x="odometer", y="price")
-    fig.show()  # crear gráfico de dispersión
+    fig_b.show()  # crear gráfico de dispersión
 
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig_b, use_container_width=True)
