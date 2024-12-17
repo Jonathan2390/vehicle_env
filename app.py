@@ -43,9 +43,9 @@ if build_scatter:  # si la casilla de verificación está seleccionada
 # Crea un histograma a partir de un botón
 st.header('Construyendo un histograma utilizando un botón')
 print()
-hist_button = st.button('Construir histograma') # crear un botón
+hist_button_a = st.button('Construir histograma') # crear un botón
         
-if hist_button: # al hacer clic en el botón
+if hist_button_a: # al hacer clic en el botón
 # escribir un mensaje
     st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')   
     # crear un histograma
