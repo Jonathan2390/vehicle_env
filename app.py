@@ -43,17 +43,12 @@ if build_scatter:  # si la casilla de verificación está seleccionada
 # Crea un histograma a partir de un botón
 st.header('Construyendo un histograma utilizando un botón')
 print()
-hist_button = st.button('Construir histograma')  # crear un botón
-
-if hist_button:  # al hacer clic en el botón
-    # escribir un mensaje
-    st.write(
-        'Creación de un histograma para el conjunto de datos de anuncios de venta de coches')
-
+hist_button = st.button('Construir histograma') # crear un botón
+        
+if hist_button: # al hacer clic en el botón
+# escribir un mensaje
+    st.write('Creación de un histograma para el conjunto de datos de anuncios de venta de coches')   
     # crear un histograma
     fig = px.histogram(car_data, x="odometer")
-
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
-    print()
-    print()
